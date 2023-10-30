@@ -18,7 +18,7 @@ export default {
         port: 2223
     },
     TA: {
-        ip: 'ws://danesaber.cf',
+        ip: 'ws://ta.batthew.co.uk',
         port: 2053,
         password: ''
     },

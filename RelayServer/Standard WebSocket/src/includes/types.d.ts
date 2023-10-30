@@ -7,15 +7,15 @@ export interface Match {
 export interface Coordinator {
     name: string;
     type: number;
-    user_id: string;
-    guid: string;
+    user_id?: string;
+    guid?: string;
 }
 export interface Player {
     name: string;
     type: number;
     user_id: string;
     guid: string;
-    team: Team[];
+    team?: Team[];
     stream_delay_ms: number | undefined;
     stream_sync_start_ms: number | undefined;
 }
