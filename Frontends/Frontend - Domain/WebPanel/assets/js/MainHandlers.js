@@ -8,6 +8,7 @@ let PlayerNames = []; /* [P1, P2, P3, P4] */
 let PlayerInfo = []; /* Used for storing data to be sent, if you press "Reload Stream-overlay" */
 let TeamNamesIDs = []; /* Team Names and IDs */
 let TeamImages = []; /* Team Images */
+
 /*
 BR Variables
 */
@@ -34,6 +35,7 @@ const inputOptions = new Promise((resolve) => {
         '3': 'Battle Royale'
     })
 });
+
 
 function Connect() {
     ws = new WebSocket(relayIp);
@@ -196,7 +198,8 @@ function showConnectedMessage(beatKhana, title) {
 function reset() {
     if (inMatch) {
         if (tmconfig == 1) {
-            ws.send(JSON.stringify({ 'Type': '5',
+            ws.send(JSON.stringify({
+                'Type': '5',
                 'command': 'resetOverlay'
             }));
             inMatch = false;

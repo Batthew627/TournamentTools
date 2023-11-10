@@ -1,6 +1,6 @@
 body {
     overflow: hidden;
-    background-color: #080808;
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(255, 0, 0, 1) 0%, rgba(223, 0, 254, 1) 50%, rgba(0, 212, 255, 1) 100%);
 }
 
 .fade-inImages {
@@ -964,7 +964,7 @@ body {
     margin-bottom: 0;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: rgba(20, 20, 20, 1);
+    background: transparent
 }
 
 .TeamsTopBar {
