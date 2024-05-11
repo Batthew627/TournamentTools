@@ -8,7 +8,7 @@ body {
   left: 0px;
   top: 0px;
   background: url("../images/BG.png");
-  height: 11vh;
+  height: 10vh;
   width: 100%;
   z-index: -1;
 }
